@@ -1,3 +1,6 @@
+*{box-sizing: border-box;}
+
+
 .full-container{
     padding: 0px 10px;
     display: flex;
@@ -8,7 +11,6 @@
 
 /**********************************START HEADER********************************************/
 
-i{ font-size: 40px; color: white; position: absolute;}
 .header{
     height: 12%; 
     background-color: rgb(233, 230, 230); 
@@ -34,7 +36,7 @@ h1{
 
 .body i { 
     z-index: 800;
-    font-size: 70px; 
+    font-size: 40px; 
     color: rgb(253, 252, 252);}
 
 .middle i{ 
@@ -97,9 +99,9 @@ h1{
 /**********************************START ABOUT************************************/
 .about{ 
     overflow: hidden;
-    width: 45%; 
+    width: 35%; 
     background-color: rgb(212, 212, 212); 
-    height: 98%; 
+    height: 80%; 
     position: relative;
     border-radius: 20px;
     box-shadow: 2px 4px 10px rgb(56, 56, 56);}
@@ -121,8 +123,8 @@ h1{
     background-color: rgb(251, 251, 251) ;
     left: 50%; top: 50%; ; 
     transform: translate(-50%, -50%); 
-    height: 400px; 
-    width: 400px; 
+    height: 350px; 
+    width: 350px; 
     box-shadow: 1px 5px 18px rgb(85, 85, 87); }
     
 .top{top:10px; 
@@ -146,10 +148,11 @@ h1{
 
 /*******************************START DOMAIN****************************/
 .domain{
+    box-sizing: border-box;
     border-radius: 10px;
-    width: 50%; 
+    width: 30%; 
     background-color: rgb(233, 231, 233); 
-    height: 98%; 
+    height: 80%; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -160,8 +163,7 @@ h1{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 25%; 
-    margin: 5px ; 
+    height: 23%;  
     width: 98%; 
     border-radius: 10px;}
 
@@ -170,8 +172,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 105px; 
-    width: 105px; 
+    height: 60px; 
+    width: 60px; 
     border-radius: 50%;
     background-color: rgb(6, 20, 221); 
     z-index: 2;}
@@ -179,20 +181,21 @@ h1{
 .round, .about > *{
         box-shadow: 1px 5px 18px rgb(139, 139, 141);}   
 
-
+.line :hover{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+}
 
 
 
 .line{
-    text-shadow: 4px 4px 4px white;
     opacity: 0;
     animation: anima 1s ease-in forwards 2s;
-    height:80% ; 
-    width: 40%; 
+    height:50% ; 
+    width: 90%; 
     font-size: 0.2rem;
     margin-left: -40px; 
     border-radius: 10px;
-    background-color: #fff; 
     border: 1px solid grey;
     display: flex;
     justify-content: center;
@@ -201,21 +204,19 @@ h1{
 
 
 @keyframes anima {
-    0%{background-color: #070707;
-        height:70% ; 
+    0%{
         width: 40%; 
         margin-left: -40px;
-        font-size: 1px;
+        font-size: 12px;
         opacity: 0;
         color: white;
-        text-shadow: 2px 2px 4px white}
+        text-shadow: 2px 2px 2px white}
 
-    100%{background-color: #fff;
-        height:70% ; 
+    100%{background-color: #fff; 
         width: 90%; 
         opacity: 1;
-        font-size: 25px; 
-        text-shadow: 2px 2px 4px rgb(5, 5, 5) ; 
+        font-size: 18px; 
+        text-shadow: 2px 2px 2px rgb(160, 158, 158) ; 
         color:blue ;
         text-transform: uppercase;
     }
