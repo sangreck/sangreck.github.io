@@ -597,7 +597,7 @@ border: 2px solid blue}
 
 
 /*****************************START FOOTER***************************/
-
+footer{background-color: rgba(0, 0, 0, 0.424);}
 .contact{
     position: relative;
     margin-top: 80px;
@@ -605,7 +605,7 @@ border: 2px solid blue}
     height: 80px; 
     background-color: rgb(233, 230, 230); 
     overflow: hidden;
-    box-shadow: 4px 2px 10px rgb(2, 2, 2);
+    box-shadow: 2px 2px 6px rgb(170, 170, 170) ;
     display: flex;
     justify-content: space-between;
     align-items: center;}
@@ -613,9 +613,24 @@ border: 2px solid blue}
     #sideleft, 
     #sideright{
     border-radius: 20px;}
+
 .infos{width: 65%; margin: auto; box-shadow: 2px 2px 4px blue;}
-.form{margin:auto; }
-input {width: 180px; height: 50px; margin: 0px 20px;}
+
+.form{margin:10px auto;font-size: 20px; padding: 20px; background-color: rgb(224, 224, 224);}
+
+input {width: 150px;font-size: 20px; height: 35px; margin: 0px 20px; outline: 1px solid blue;}
+#message{width: 400px; }
+
+
+button{padding: 6px ;  color: white; font-size: 20px;
+     background-color: blue; cursor: pointer;
+    width: 110px; border-radius: 8px;
+    border: 2px solid white;}
+
+
+
+
 .copy{height: 60px; }
 .copy p {text-align: center;}
+
 /*****************************END FOOTER***************************/
