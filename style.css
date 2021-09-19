@@ -13,7 +13,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     align-items: center;
     margin-bottom: 10px;}
 
-    nav {
+    /* nav {
         border-radius :0px 0px 15px 15px;
         box-shadow: 2px 2px 3px rgb(56, 56, 56);
         height: 42px; 
@@ -37,8 +37,37 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
     nav ul li a:hover{
         background-color: blue; 
-        color:white}
+        color:white} */
 
+.navbar{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none; 
+    position: fixed;
+    right: 0px; 
+   
+    border-radius: 15px;
+    /* height: 40px; 
+    width: 40px; */
+
+    height: 250px; 
+    width: 5px;
+    
+    /* border-radius: 50%;  */
+    margin :10px; 
+    z-index: 400;
+    background-color: rgb(208, 208, 214);}
+
+    .navbar:hover{
+        height: 250px; 
+        width: 45px;
+        background-color: rgb(208, 208, 214);}
+
+    .navbar  i {color:rgb(54, 12, 240) ; font-size: 25px; margin-right: 32px;}
+    
+    .navbar i:hover { font-size : 35px}
 
 
 .content{
