@@ -1,6 +1,11 @@
 *{box-sizing: border-box;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
+html{
+    --cored : rgb(221, 6, 6);
+    
+}
+
 /**********************************START HEADER********************************************/
 
 .header{
@@ -11,7 +16,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;}
+    margin-bottom: 30px;}
 
 
 .navbar{
@@ -26,7 +31,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
     height: 40px; 
     width: 40px;
     z-index: 400;
-    border: 2px solid rgb(208, 208, 214);}
+    border: 2px solid rgba(208, 208, 214, 0);}
 
 .navbar:hover{
     height: 250px; 
@@ -152,8 +157,8 @@ height: 300px; align-items: center; box-sizing: border-box;}
 
 .moi{border-radius: 50%;
     box-shadow: 3px 5px 5px rgb(15, 28, 211);
-     height:150px;
-     width:150px; 
+     height:160px;
+     width:160px; 
     float: left; 
     shape-outside: circle(); 
     margin-right: 22px;
@@ -169,7 +174,6 @@ margin-top: 12px;}
     height: 280px;
     box-sizing: border-box;
 }
-/* .pick :hover{background-color: white; box-shadow: 1px 1px 1px blue;} */
 
 .des{display: flex;
     padding: 5px; 
@@ -215,7 +219,6 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
 
 /**************************************************************************************/
 .accueil{
-    margin-top: 50px;
     padding: 0px 20px;
     height:490px; 
     width: 95%; 
@@ -378,13 +381,14 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
 
 
 
-.container{display: flex; flex-direction: column; justify-content: space-between; height: 800px; 
+.container{display: flex; flex-direction: column; justify-content: space-between; height: 830px; 
    position: relative; }
 
     .doms h2{position: absolute; z-index: 40;
-        top: -2%; 
+        top: -3%; 
         left: 50%; 
         width: auto;
+        font-size: 30px;
         transform: translateX(-50%);
         background-color: rgb(241, 10, 10); 
         color:rgb(249, 249, 252) ;
@@ -395,6 +399,7 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
        }
     
     .knows h2{
+        font-size: 30px;
          position: absolute; 
          top: 54%; 
          left: 50%;
@@ -406,13 +411,14 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
          border-radius: 40px 0px 40px 0px;
          box-shadow: 5px 5px 2px blue;}
 
+.doms h3 {font-size: 22px;}
 
-
-.doms{ height: 380px;
+.doms{ height: 400px;
     padding: 10px;
     display: flex; margin: 60px 0px; background-color: rgb(249, 251, 249);
     box-shadow: 2px 2px 3px rgb(184, 182, 182) inset;
-    flex-direction: row; width: 100%;justify-content: space-between;}
+    flex-direction: row; width: 100%;justify-content: space-between;
+border: 2px solid blue}
 
 .geosciences, .numeric{background-color: rgb(249, 251, 249); 
     box-shadow: 1px 4px 13px rgb(200, 198, 198) ;
@@ -435,22 +441,23 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
 .gen:hover{background-color: red;}
 
 .bio{background-color:rgb(39, 17, 245); width: 50%;}
-.gra{background-color:rgb(39, 17, 245); width: 30%;}
+.gra{background-color:rgb(39, 17, 245); width: 36%;}
 .geoma{background-color:rgb(39, 17, 245); width: 90%;}
 .clima{background-color:rgb(39, 17, 245); width: 90%;}
 .stat{background-color:rgb(39, 17, 245); width: 40%;}
 .hydro{background-color:rgb(39, 17, 245); width: 65%;}
 .hydrogeo{background-color:rgb(39, 17, 245); width: 55%;}
 .web{background-color:rgb(39, 17, 245); width: 60%;}
-.data{background-color:rgb(39, 17, 245); width: 22%;}
-.ges{background-color:rgb(39, 17, 245); width: 32%;}
+.data{background-color:rgb(39, 17, 245); width: 26%;}
+.ges{background-color:rgb(39, 17, 245); width: 37%;}
 
 
 
-.knows{ margin-top: 30px ;display: flex; justify-content: space-between; 
-    height: 300px;background-color: rgb(249, 251, 249);
-    box-shadow: 2px 2px 3px rgb(184, 182, 182) inset;padding: 10px; }
+.knows{ margin-top: 50px ;display: flex; justify-content: space-between; 
+    height: 315px;background-color: rgb(249, 251, 249);
+    box-shadow: 2px 2px 3px rgb(184, 182, 182) inset;padding: 10px; border: 2px solid blue}
 .know{
+    
     display: flex; 
     flex-direction: column ; 
     justify-content: space-between;
@@ -464,7 +471,7 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
 .circle{width: 100%; height: 40px; text-align: center; color: white;
     background-color: rgb(7, 42, 245); line-height: 20%; display: flex; 
     align-items: center;
-    justify-content: center;}
+    justify-content: center; text-shadow: 2px 2px 3px black;}
 
 .circle:hover{background-color: rgb(221, 7, 7);}
 
@@ -487,18 +494,29 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
 }
 .pro{ border: 2px solid blue;
     display: flex; 
-    background-color: rgb(236, 234, 234);
+    background-color: rgb(243, 241, 241);
     justify-content: space-between; 
     flex-direction: column;
-    padding-bottom: 20px;}
+    padding-bottom: 20px;
+}
 
 .projetss h2, .articles h2{
-    text-align: center;
-    color: blue;
+  display: flex
+  ;
+  justify-content: center;
+  align-items: center;
+    color: rgb(245, 245, 248);
     text-transform: uppercase;
     font-size: 2rem;
-    background-color: rgb(212, 211, 211);
-    text-shadow: 1px 2px 3px rgb(158, 158, 158);
+    padding: 10px 0px;
+    border-radius: 40px 0px 40px 0px;
+    width: 280px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(240, 9, 9);
+    box-shadow: 2px 3px 4px #0b07f0;
+    text-shadow: 1px 2px 3px rgb(1, 1, 2);
 }
 
 
@@ -520,17 +538,13 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
     justify-content: space-between; 
     flex-direction: column;
     margin-top: 20px;
-    background-color: rgb(236, 234, 234);
+    background-color: rgb(245, 244, 244);
     padding-bottom: 10px }
 
 
 .detail{text-align: center;}
 
 .detail:hover{ font-weight: 700;}
-
-
-
-
 
 
 
@@ -556,8 +570,7 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
     border-radius: 0px 0px 70px 70px;
     display: flex;
     justify-content:center;
-    align-items: center
-    
+    align-items: center  
 }
 
 
@@ -570,8 +583,8 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
     align-self: center;
     margin-right: 10px;
     }
-    .down a {font-size: 20px;
-        color: white; padding: 2px;}
+.down a {font-size: 20px;color: white; padding: 2px 10px;}
+.down i{font-size: 18px; color: white; margin-right: 7px;}
 
 
 
