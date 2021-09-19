@@ -3,5 +3,9 @@
         "activityBar.background": "#3B2252",
         "titleBar.activeBackground": "#532F73",
         "titleBar.activeForeground": "#FDFCFE"
-    }
+    },
+    "cSpell.ignoreWords": [
+        "ARTCILES",
+        "PROJETS"
+    ]
 }
