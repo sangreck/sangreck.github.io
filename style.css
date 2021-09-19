@@ -81,11 +81,17 @@ h1 {
     font-size: 40px; 
     color: rgb(253, 252, 252);}
 
+    .yes{color: rgb(44, 8, 250);}
+    .ref{color: rgb(243, 4, 4);}
+
+
 .middle i{ 
     z-index: 800;
     font-size: 50px; 
     color: #fff; 
     margin: 0px 50px;}
+
+.middle i:hover{transform: scale(1.3);}
 
 .sideleft i, .sideright i{ 
     z-index: 800;
@@ -438,7 +444,7 @@ border: 2px solid blue}
     align-items: center; 
     color: white;}
 
-.gen:hover{background-color: red;}
+.gen:hover{background-color: red; height: 35px;}
 
 .bio{background-color:rgb(39, 17, 245); width: 50%;}
 .gra{background-color:rgb(39, 17, 245); width: 36%;}
@@ -470,7 +476,7 @@ border: 2px solid blue}
 .knows li{padding: 10px 0px; font-size: 17px;}
 .circle{width: 100%; height: 40px; text-align: center; color: white;
     background-color: rgb(7, 42, 245); line-height: 20%; display: flex; 
-    align-items: center;
+    align-items: center;box-shadow: 2px 2px 3px black;
     justify-content: center; text-shadow: 2px 2px 3px black;}
 
 .circle:hover{background-color: rgb(221, 7, 7);}
@@ -593,6 +599,7 @@ border: 2px solid blue}
 /*****************************START FOOTER***************************/
 
 .contact{
+    position: relative;
     margin-top: 80px;
     margin-bottom: 10px;
     height: 80px; 
@@ -606,6 +613,9 @@ border: 2px solid blue}
     #sideleft, 
     #sideright{
     border-radius: 20px;}
-
-
+.infos{width: 65%; margin: auto; box-shadow: 2px 2px 4px blue;}
+.form{margin:auto; }
+input {width: 180px; height: 50px; margin: 0px 20px;}
+.copy{height: 60px; }
+.copy p {text-align: center;}
 /*****************************END FOOTER***************************/
