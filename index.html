@@ -10,7 +10,7 @@
 </head>
 <body>
    <!-- <div class="full-container"> -->
-        <div class="header">
+        <div class="header" id="home">
             <div class="sideleft"><i class="fas fa-arrow-left"></i></div>
             <div class="middle"><h1>SANN SHABIB PORTFOLIO</h1> </div>
             <div class="sideright"><i class="fas fa-arrow-right"></i></div>
@@ -20,22 +20,14 @@
        
 
         <!--NAV-->
-        <!-- <nav>
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">A propos</a></li>
-                <li><a href="">Competences</a></li>
-                <li><a href="">Travaux</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-        </nav> -->
-
+        
         <ul class="navbar">
-            <li><a href=""><i class="fas fa-home"></i> </a></li>
-            <li><a href=""> <i class="fab fa-audible"></i></a></li>
-            <li><a href=""> <i class="fas fa-pen"></i></a></li>
-            <li><a href=""> <i class="fas fa-address-book"></i></a></li>
-            <li><a href=""><i class="fas fa-blog"></i></a> </li>
+            <li><a href="#home"><i class="fas fa-home"></i> </a></li>
+            <li><a href="#about"><i class="fas fa-user-circle"></i> </a></li>
+            <li><a href="#competences"> <i class="fab fa-audible"></i></a></li>
+            <li><a href="#travaux"> <i class="fas fa-pen"></i></a></li>
+            <li><a href="#contact"> <i class="fas fa-address-book"></i></a></li>
+            <li><a href="www.decharrias.skyrock.com"><i class="fas fa-blog"></i></a> </li>
         </ul>
 
         <!--NAV-->
@@ -72,25 +64,25 @@
                 <!-- zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz -->
             <div class="domain"> 
                 <div class="stock sto0">
-                    <div class="round"> <i class="fas fa-home"></i></div>
-                    <div class="line"><h2>a propos</h2></div>
+                    <div class="round"> <i class="fas fa-user-circle"></i></div>
+                    <div class="line"> <a href="#about"><h2>a propos</h2></a></div>
                 </div>
                 <div class="stock sto3">
                     <div class="round"><i class="fab fa-audible"></i></div>
-                    <div class="line"><h2>competences</h2></div>
+                    <div class="line"> <a href="#competence"> <h2>competences</h2></a></div>
                 </div>
                 <div class="stock sto1">
                     <div class="round"><i class="fas fa-pen"></i></div>
-                    <div class="line"> <h2>travaux</h2></div>
+                    <div class="line"> <a href="#travaux"> <h2>travaux</h2></a></div>
                 </div>
                 
                 <div class="stock sto3">
                     <div class="round"><i class="fas fa-address-book"></i></div>
-                    <div class="line"><h2>contacts</h2></div>
+                    <div class="line"> <a href="#contact"><h2>contacts</h2></a> </div>
                 </div>
                 <div class="stock sto2">
                     <div class="round"><i class="fas fa-blog"></i></div>
-                    <div class="line"><h2>blog</h2></div>
+                    <div class="line"> <a href="www.decharrias.skyrock.com"><h2>blog</h2></a>   </div>
                 </div>
             </div>
         </div>
@@ -100,15 +92,16 @@
 
 <div class="propos">
     
-    <div class="content">
-        <div class="area"><div class="roun"> <i class="fas fa-home"></i></div>
-        <div class="lin"><h2>a propos</h2></div></div>
+    <div class="content"id="about">
+        <div class="area"><div class="roun"> <i class="fas fa-user-circle"></i></div>
+            <div class="lin"><h2>a propos</h2></div>
+         </div>
         <div class="bar"></div>
     </div>
     
     
     <div class="myself">
-       <div class="pick">
+       <div class="pick" >
            <div> <img class="moi" src="MOI.JPG"></div>
          <div><p> <span>[Sann Shabib Yussuf]</span>  Doctorant en Gégraphie  option Hydroclimatologie évoluant principalement dans les domaines de la télédétection, des systèmes d’informations géographiques (SIG), de la prospection hydrogéologique et de la climatologie. <br>
         Aussi, amoureux de tout ce qui survole l’informatique notamment le numérique.
@@ -169,7 +162,7 @@
         <div class="bar"></div>
     </div>
 
-<div class="container">
+<div class="container" id="competences">
     
     <div class="doms">
         <h2>COMPETENCES SECTORIELLES</h2>
@@ -278,7 +271,7 @@
         <div class="lin"> <h2>TRAVAUX SCIENTIFIQUES</h2></div> </div>
         <div class="bar"></div>
     </div>
-    <div class="productions">
+    <div class="productions" id="travaux">
         <div class="projetss">
             <H2>MES PROJETS</H2>
             <div class="pros" >
@@ -375,7 +368,7 @@
 
 
 <!-- zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz -->
-        <div class="contact">
+        <div class="contact" id="contact">
             
             <div class="sideleft" id="sideleft"><i class="fas fa-arrow-left"></i></div>
             <div class="middle" id="middle">
