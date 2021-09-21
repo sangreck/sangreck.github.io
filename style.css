@@ -2,9 +2,9 @@
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
 html{
-    --cored : red
-    --coblue :blue
-    --coblack : black
+    --cored : red;
+    --coblue :blue;
+    --coblack : rgb(3, 2, 17);
     --cowhite :rgb(233, 230, 230); 
     --cosky :rgb(6, 205, 240); 
     }
@@ -13,7 +13,7 @@ html{
 
 .header{
     height: 12%; 
-    background-color: rgb(233, 230, 230); 
+    background-color: var(--coblack); 
     width: 100%;
     box-shadow: 2px 4px 10px rgb(7, 7, 7);
     display: flex;
@@ -83,7 +83,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(251, 251, 251) ;
+    background-color: var(--coblack);  ;
     height: 130px; 
     width: 130px; 
     margin-top: -20px;
