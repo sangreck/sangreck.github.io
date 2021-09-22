@@ -103,6 +103,8 @@ html{
     height: 15%;  
     width: 98%; }
 
+.round i{color: var(--cowhite); font-size: 25px;}
+
    
 .round{
     margin-left: 2px;
