@@ -5,9 +5,9 @@ body{background-color:var(--coblack);  ;}
 html{
     --cored : red;
     --coblue :blue;
-    --coblack : rgb(3, 2, 17);
+    --coblack : rgb(76, 76, 82);
     --cowhite :rgb(233, 230, 230); 
-    --cosky :rgb(5, 175, 206); 
+    --cosky :rgb(7, 127, 148); 
     }
 
 /**********************************START HEADER********************************************/
@@ -22,6 +22,9 @@ html{
     align-items: center;
     margin-bottom: 30px;}
 
+#dates{
+    height: 30px; margin: auto; background-color:white; color: rgb(92, 5, 5);
+}
 
 .navbar{
     align-items: center;
@@ -72,7 +75,8 @@ html{
     box-sizing: border-box;
     /* border-radius: 0px 80px 0px 0px; */
     width: 20%; 
-    background-color: rgb(8, 8, 8); 
+    background-color: var(--coblack);
+    border: 2px solid white;
     height: 95%; 
     display: flex; 
     flex-direction: column; 
@@ -87,7 +91,7 @@ html{
     background-color: var(--cowhite);  ;
     height: 130px; 
     width: 130px; 
-    margin-top: -20px;
+    margin-top: -25px;
     border-radius: 50%;
     box-shadow: 1px 5px 18px var(--cowhite); ; }
 
@@ -163,7 +167,8 @@ html{
     position: relative;
     width: 78%; 
     height: 95%; 
-    box-shadow: 2px 4px 10px rgb(56, 56, 56)}
+    border: 1px solid white;
+    box-shadow: 2px 4px 10px rgb(255, 255, 255)}
 
 .slide1{
     animation : slide 2s alternate-reverse forwards  5s;
@@ -406,11 +411,11 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
     height: 400px;
     padding: 10px;
     display: flex; margin: 60px 0px; background-color: var(--coblack); ;
-    box-shadow: 2px 2px 3px rgb(184, 182, 182) inset;
+    box-shadow: 2px 2px 3px rgb(7, 7, 7) inset;
     flex-direction: row; width: 100%;justify-content: space-between;
     border: 2px solid var(--cosky); ; }
 
-.geosciences, .numeric{background-color: rgb(10, 10, 10); 
+.geosciences, .numeric{background-color: rgb(41, 40, 40); 
     box-shadow: 1px 4px 13px rgb(200, 198, 198) ;
     width: 47%; padding: 10px; 
     display: flex;justify-content: space-between; 
