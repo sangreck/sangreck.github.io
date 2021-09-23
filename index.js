@@ -32,6 +32,31 @@ setInterval(() => {
     
 // *********************************************************
 // 
+// console.log(window.innerHeight);
+  // console.log(window.scrollY);
+  // console.log(document.body.offsetHeight);
+
+
+const myselfty = document.querySelector('.myself');
+const gen = document.getElementById('geoss')
+const travaux = document.querySelector('.myself');
+console.log(gen);
+
+window.addEventListener('scroll', function  () {
+  
+scrollValue = (window.innerHeight+window.scrollY) / (document.body.offsetHeight);
+// console.log(scrollValue);
+
+if (scrollValue > 0.21){
+  myselfty.style.opacity = '1';
+  myselfty.style.transform = 'none';
+}
+if (scrollValue > 0.33){
+  gen.style.opacity = '1';
+  gen.style.transform = 'none';
+}
+  
+});
 
 
 

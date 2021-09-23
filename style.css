@@ -315,7 +315,9 @@ span {color: var(--cosky); ; ; font-weight: 700;}
 /* 
 /*****************************************************************//*////* */
 .myself{display: flex; justify-content: space-between;
-height: 300px; align-items: center; box-sizing: border-box; z-index: 1;}
+height: 300px; align-items: center; box-sizing: border-box; z-index: 1;
+opacity: 0; transform: translateX(-1200px);
+transition: 2s ease-out;}
 
 
 
@@ -435,6 +437,8 @@ p{font-size: 1rem; padding: 10px; text-align: justify; }
     width: 47%; padding: 10px; 
     display: flex;justify-content: space-between; 
     flex-direction: column; box-sizing: border-box;}
+
+    .geosciences{opacity: 0; transform: translateY(-500px); transition: 3s ease;}
 
 
     .gens{width: 100%; background-color: rgb(208, 211, 207);
@@ -738,16 +742,7 @@ margin-top: 12px;}
 
 
 
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:1000px) {
+@media screen and (max-width:900px) {
 
     .accueil{
         height:490px;  
@@ -776,6 +771,16 @@ margin-top: 12px;}
     height: 90%; 
     border: 1px solid white;
     box-shadow: 2px 4px 6px rgb(255, 255, 255)}
+
+.slide2{
+    opacity: 0;
+    animation: slid 2s forwards 10s;
+    height: 100%; 
+    width: 100%;
+    background:url(1.jpg);
+    background-size: cover;
+    position: absolute;}
+
    
     
 }
