@@ -38,18 +38,18 @@ html{
 }
 
 .navbar{
-    align-items: center;
+    /* align-items: center;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row; */
     list-style: none; 
     position: fixed;
     right: 0px; 
-    border-radius: 50px;
-    height: 40px; 
-    width: 40px;
+    border-radius: 10px 50px 0px 50px;
+    height: 140px; 
+    width: 10px;
     z-index: 400;
-    border: 2px solid rgba(204, 204, 206, 0);}
+    border-right: 8px solid var(--cosky); }
 
 .navbar:hover{
     height: 250px; 
@@ -63,12 +63,13 @@ html{
     position: fixed;
     right: 0px; 
     border-radius: 50px;
-    border-left: 3px solid var(--cosky); ; ;}
+    border-left: 3px solid var(--cosky); 
+    border-right: 0.2px solid var(--cosky)  ;}
 
 .navbar  i{
     color:var(--cosky); ;  ; 
     font-size: 35px; 
-    margin-right: 32px;;}
+    margin-right: 35px;;}
 
 
 /**************************************************************************************/
@@ -145,12 +146,12 @@ html{
     text-transform: uppercase;
     cursor: pointer;
     opacity: 0;
-    animation: anima 1s  forwards 2s;
+    animation: anima 1s  forwards 6.2s;
     height:35% ; 
     width: 30%; 
     font-size: 0.2rem;
     margin-left: -10px; 
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 1px solid grey;
     display: flex;
     justify-content: center;
@@ -181,7 +182,7 @@ html{
     box-shadow: 2px 2px 2px rgb(255, 255, 255)}
 
 .slide1{
-    animation : slide 2s alternate-reverse forwards  12s;
+    animation : slide 2s alternate-reverse forwards  8s;
     height: 100%; 
     width: 100%;
     /* background:url(4.jpg) ; */
@@ -190,7 +191,7 @@ html{
 
 .slide2{
    opacity: 0;
-    animation: slid 2s forwards 10s;
+    animation: slid 2s forwards 6s;
     height: 100%; 
     width: 100%;
     background:url(3.jpg);
@@ -320,31 +321,32 @@ height: 300px; align-items: center; box-sizing: border-box; z-index: 1;}
 
 .moi{border-radius: 50%;
     box-shadow: 3px 5px 5px var(--cosky); ; ;
-     height:160px;
-     width:160px; 
+     height:200px;
+     width:200px; 
     float: left; 
     shape-outside: circle(); 
     margin-right: 22px;
 margin-top: 12px;}
 
 .pick{
+   
     overflow: auto;
-    padding-left: 5px;
+    padding: 10px 0px 0px 10px;
     box-shadow: 3px 10px 24px var(--cowhite) inset;
     border-top :2px solid var(--cosky); ; ;
     border-bottom :2px solid var(--cosky); ; ;
     background-color: rgb(182, 181, 181); 
     width: 65%; 
-    height: 280px;
+    height: 80%;
     box-sizing: border-box;
 }
 
 
 
 .des{
-     
+     height: 90%;
      display: flex;
-    padding: 5px; 
+   
     flex-direction: row; 
     justify-content: center; 
     box-shadow: 12px 18px 24px rgb(2, 98, 122) inset;
@@ -363,11 +365,11 @@ margin-top: 12px;}
     align-items: center; 
    }
 
-.hub i{margin-right: 10px; font-size: 25px;}
+.hub i{margin-right: 5px; font-size: 20px;}
 .hub h3{ border-bottom: 1px solid white;}
 
  .des li{   padding: .1875rem;
-            margin: 1.25rem ;
+            margin: 10px ;
            font-size: 20px;}
 
 .des h3{ font-size: 20px; 
@@ -376,7 +378,7 @@ margin-top: 12px;}
     text-align: center;
     padding-bottom: 2px;}
 
-p{font-size: 1.24rem; padding: 10px; text-align: justify; }
+p{font-size: 1rem; padding: 10px; text-align: justify; }
 
 
 
@@ -422,12 +424,13 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
 .doms{ 
     height: 400px;
     padding: 10px;
-    display: flex; margin: 60px 0px; background-color: var(--coblack); ;
+    display: flex; margin: 60px 0px; 
+    background-color: var(--coblack); ;
     box-shadow: 2px 2px 3px rgb(7, 7, 7) inset;
     flex-direction: row; width: 100%;justify-content: space-between;
     border: 2px solid var(--cosky); ; }
 
-.geosciences, .numeric{background-color: rgb(41, 40, 40); 
+.geosciences, .numeric{background-color: rgba(107, 107, 107, 0.74) ; 
     box-shadow: 1px 4px 13px rgb(200, 198, 198) ;
     width: 47%; padding: 10px; 
     display: flex;justify-content: space-between; 
@@ -463,10 +466,10 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
 
 
 .knows{ margin-top: 50px ;display: flex; justify-content: space-between; 
-    height: 315px;background-color: rgb(2, 2, 2);
+    height: 315px;background-color: rgb(173, 173, 173);
     box-shadow: 2px 2px 3px rgb(184, 182, 182) inset;padding: 10px; border: 2px solid var(--cosky); ; }
 .know{
-    
+    font-weight: 500;
     display: flex; 
     flex-direction: column ; 
     justify-content: space-between;
@@ -530,7 +533,7 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
     margin-bottom: 20px;
     padding: 10px;
     box-shadow: 2px 2px 22px  rgb(20, 20, 20);
-    height: 750px;
+    height: 650px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -548,7 +551,8 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
 
 .detail{text-align: center;}
 
-.detail:hover{ font-weight: 700;}
+.detail:hover{ font-weight: 700;background-color: #fff;
+    box-shadow: 2px 4px 3px rgb(97, 97, 97);;}
 
 
 
@@ -561,20 +565,8 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
     width: 100%;
     display: flex;
     justify-content:center;
-    align-items: center
-    
-}
-.deforme{
-    box-shadow: 2px 4px 3px rgb(97, 97, 97);
-    text-align: center;
-    color: white;
-    background-color: var(--cosky); ; ;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    align-items: center  
-}
+    align-items: center}
+
 
 
 
@@ -610,9 +602,12 @@ footer{background-color: rgba(0, 0, 0, 0.424);}
     #sideright{
     border-radius: 20px;}
 
-.infos{width: 65%; margin: auto; box-shadow: 2px 2px 4px var(--cosky); ; ;}
+.infos{width: 60%; padding: 0px; margin: auto; box-shadow: 2px 2px 2px var(--cosky); ; ;}
 
-.form{margin:10px auto;font-size: 20px; padding: 20px; background-color: rgb(204, 204, 204);}
+.form{margin:10px auto;font-size: 20px; padding: 20px;
+     background-color: rgb(204, 204, 204);display: flex;
+     justify-content: center;
+     align-items: center;}
 
 input {width: 150px;font-size: 20px; height: 35px; margin: 0px 20px; outline: 1px solid var(--cosky); ; ;}
 #message{width: 400px; }
@@ -790,7 +785,7 @@ margin-top: 12px;}
 
 .loads{
     opacity: 0;
-   animation: cont 10s linear ; 
+   animation: cont 6s linear ; 
    height: 100%; 
     width: 100%; 
     /* background-color: #fff;  */
@@ -804,7 +799,7 @@ margin-top: 12px;}
     border: 15px solid rgb(133, 133, 130);
     border-bottom: 15px solid rgb(4, 179, 185);
     position: absolute;
-    margin: auto;
+    margin: -20px auto auto -50px;
     top: 50%;
     left: 50%;
     box-shadow: 1px 1px 15px rgb(245, 244, 244);
