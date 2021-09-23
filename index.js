@@ -1,4 +1,6 @@
-var main = document.getElementById("dates");
+
+var dat = document.querySelector(".date");
+var tim = document.querySelector(".time");
 // 
 var date = new Date();
 var annee = date.getFullYear();
@@ -12,18 +14,7 @@ var Mois = ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Se
 mois = Mois[mois];
 jours = Jours[jours];
 
-
-// 
-// 
-// var heure = date.getHours();
-// var minute = date.getMinutes();
-// var second = date.getSeconds();
-
-// if(heure < 10){heure = "0"+heure;}
-// if(minute < 10){minute = "0"+minute;}
-// if(second < 10){second = "0"+second;}
-// 
-
+dat.innerHTML = jours + " "+ jour + " " + mois+ " "+ annee
 
 
 setInterval(() => {
@@ -36,9 +27,11 @@ setInterval(() => {
       if(minute < 10){minute = "0"+minute;}
       if(second < 10){second = "0"+second;}
 
-     main.innerHTML = heure + ":"+ minute + ":" + second;
+     tim.innerHTML = heure + ":"+ minute + ":" + second;
     }, 1000);
     
+// *********************************************************
+
 
 
 

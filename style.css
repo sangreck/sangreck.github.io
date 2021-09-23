@@ -1,4 +1,4 @@
-*{box-sizing: border-box;
+*{box-sizing: border-box; 
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 body{background-color:var(--coblack);  ;}
 
@@ -20,10 +20,21 @@ html{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;}
+    margin-bottom: 10px;}
 
-#dates{
-    height: 30px; margin: auto; background-color:white; color: rgb(92, 5, 5);
+.datetime{
+    margin: 0px auto 20px auto;
+    border-radius: 0px 0px 150px 150px;
+    background-color: rgba(255, 255, 255, 0.287);
+    height: 32px; 
+    width: 500px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px var(--cosky) ;
 }
 
 .navbar{
@@ -76,13 +87,13 @@ html{
     /* border-radius: 0px 80px 0px 0px; */
     width: 20%; 
     background-color: var(--coblack);
-    border: 2px solid white;
+    border: 1px solid white;
     height: 95%; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
     justify-content: space-between;
-    box-shadow: 4px 6px 2px var(--cowhite); ;}
+    box-shadow: 2px 2px 2px var(--cowhite); ;}
     
 .center{ 
     display: flex;
@@ -93,7 +104,7 @@ html{
     width: 130px; 
     margin-top: -25px;
     border-radius: 50%;
-    box-shadow: 1px 5px 18px var(--cowhite); ; }
+    box-shadow: 1px 5px 18px var(--cosky); ; }
 
 .domain a{text-decoration: none;}
 
@@ -163,27 +174,27 @@ html{
     }
 }
 .slider{ 
-    /* border-radius: 90px  0px 0px 0px; */
     position: relative;
     width: 78%; 
     height: 95%; 
     border: 1px solid white;
-    box-shadow: 2px 4px 10px rgb(255, 255, 255)}
+    box-shadow: 2px 2px 2px rgb(255, 255, 255)}
 
 .slide1{
-    animation : slide 2s alternate-reverse forwards  5s;
+    animation : slide 2s alternate-reverse forwards  12s;
     height: 100%; 
     width: 100%;
-    background:url(4.jpg);
-    position: absolute;
-   }
+    /* background:url(4.jpg) ; */
+    background-size: cover;
+    position: absolute;}
 
 .slide2{
    opacity: 0;
-    animation: slid 2s forwards 3s;
+    animation: slid 2s forwards 10s;
     height: 100%; 
     width: 100%;
     background:url(3.jpg);
+    background-size: cover;
     position: absolute;}
 
     @keyframes slid {
@@ -191,7 +202,8 @@ html{
             opacity: 0;
             margin-top: -540px;}
     
-        100%{opacity: 1;}}
+        100% {opacity: 1;}}
+
     @keyframes slide {
         0%{ 
             opacity: 0;
@@ -381,7 +393,7 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
         top: -3%; 
         left: 50%; 
         width: auto;
-        font-size: 30px;
+        font-size: 1.5rem;
         z-index: 40;
         transform: translateX(-50%);
         background-color: rgb(212, 209, 209); 
@@ -393,7 +405,7 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
        }
     
     .knows h2{
-        font-size: 30px;
+        font-size: 1.5rem;
          position: absolute; 
          top: 54%; 
          left: 50%;
@@ -493,13 +505,15 @@ p{font-size: 1.24rem; padding: 10px; text-align: justify; }
     padding-bottom: 20px;
 }
 
+
+    
 .projetss h2, .articles h2{
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(10, 190, 214);
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 40px 40px 0px  0px;
     width: 280px;
     margin: auto;
@@ -616,3 +630,196 @@ button{padding: 6px ;  color: white; font-size: 20px;
 .copy p {text-align: center; color: white;}
 
 /*****************************END FOOTER***************************/
+
+
+
+
+
+
+/**********************LE RESPONSIVE***********************/
+
+@media screen and (max-width:650px) {
+    .header{
+        height: 12%; 
+        background-color: var(--coblack); 
+        width: 100%;
+        box-shadow: 2px 4px 10px rgb(235, 235, 235);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;}
+.header h1{font-size: 1.8rem;}
+
+    .accueil{
+        height:490px;  
+        margin: auto;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row; }
+        .domain{
+            box-sizing: border-box;
+            width: 50%; 
+            background-color: var(--coblack);
+            border: 0.5px solid rgb(255, 255, 255);
+            height: 90%; 
+            display: flex; 
+            /* margin-top: 40px; */
+            flex-direction: column; 
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 2px 2px 6px var(--cowhite); ;
+        }
+
+    .slider{ 
+    position: relative;
+    width: 55%; 
+    height: 90%; 
+    border: 1px solid white;
+    box-shadow: 2px 4px 6px rgb(255, 255, 255)}
+
+    .slide2{
+    opacity: 0;
+    animation: slid 2s forwards 10s;
+    height: 100%; 
+    width: 100%;
+    background:url(1.jpg);
+    background-size: cover;
+    position: absolute;}
+
+
+.myself{display: flex; flex-direction: column ; 
+    justify-content: space-between;
+height: auto; 
+align-items: center; 
+box-sizing: border-box; z-index: 1;}
+
+
+.moi{border-radius: 50%;
+    box-shadow: 3px 5px 5px var(--cosky); ; ;
+     height:160px;
+     width:160px; 
+    float: left; 
+    shape-outside: circle(); 
+    margin-right: 22px;
+margin-top: 12px;}
+
+.pick{transform: scale(.9);
+    margin-bottom: 20px;
+    overflow: auto;
+    padding-left: 5px;
+    box-shadow: 3px 10px 24px var(--cowhite) inset;
+    border-top :2px solid var(--cosky); ; ;
+    border-bottom :2px solid var(--cosky); ; ;
+    background-color: rgb(182, 181, 181); 
+    width: 100%; 
+    height: 280px;
+    box-sizing: border-box;
+}
+
+
+
+    .doms{flex-direction: column-reverse; height: auto;  margin-bottom: 10px;}
+
+     .knows{height: auto; display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap; }
+    .geosciences, .numeric{
+    width: 100%; padding: 10px; 
+    display: flex;justify-content: space-between; 
+    flex-direction: column; box-sizing: border-box;}
+    .gens{margin: 5px 0px;}
+
+    .infos{display: none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+
+    .accueil{
+        height:490px;  
+        margin: auto;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row; }
+
+        .domain{
+            box-sizing: border-box;
+            width: 48%; 
+            background-color: var(--coblack);
+            border: 0.5px solid rgb(255, 255, 255);
+            height: 90%; 
+            display: flex; 
+            /* margin-top: 40px; */
+            flex-direction: column; 
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 2px 2px 6px var(--cowhite); }
+
+    .slider{    
+    position: relative;
+    width: 52%; 
+    height: 90%; 
+    border: 1px solid white;
+    box-shadow: 2px 4px 6px rgb(255, 255, 255)}
+   
+    
+}
+
+
+
+
+.loads{
+    opacity: 0;
+   animation: cont 10s linear ; 
+   height: 100%; 
+    width: 100%; 
+    /* background-color: #fff;  */
+    z-index: 800; position: relative;}
+
+.loader{  
+    animation: tour 2s linear infinite ;  
+    height: 120px; 
+    width: 120px;
+    border-radius: 50%;
+    border: 15px solid rgb(133, 133, 130);
+    border-bottom: 15px solid rgb(4, 179, 185);
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    box-shadow: 1px 1px 15px rgb(245, 244, 244);
+    transform: translateX(-50%,-50%); z-index: 1000;}
+
+@keyframes tour {
+    0%{ transform: rotate(0deg);margin-top:-50px}
+    50%{transform:rotate(360deg);margin-top:-50px}
+    100%{transform:rotate(720deg);margin-top:-50px}}
+
+@keyframes cont {
+    0%{ opacity: 1;}
+    80%{ opacity: 1;}
+    100%{opacity: 0;}}
+
+
+
+
