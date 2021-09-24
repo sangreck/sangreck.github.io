@@ -38,22 +38,25 @@ setInterval(() => {
 
 
 const myselfty = document.querySelector('.myself');
-const gen = document.getElementById('geoss')
-const travaux = document.querySelector('.myself');
-console.log(gen);
+const gen = document.getElementById('geoss');
+const num = document.getElementById('num');
+
 
 window.addEventListener('scroll', function  () {
   
 scrollValue = (window.innerHeight+window.scrollY) / (document.body.offsetHeight);
-// console.log(scrollValue);
 
 if (scrollValue > 0.21){
   myselfty.style.opacity = '1';
   myselfty.style.transform = 'none';
 }
-if (scrollValue > 0.33){
+if (scrollValue > 0.36){
   gen.style.opacity = '1';
   gen.style.transform = 'none';
+}
+if (scrollValue > 0.36){
+  num.style.opacity = '1';
+  num.style.transform = 'none';
 }
   
 });
