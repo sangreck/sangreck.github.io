@@ -5,9 +5,9 @@ body{background-color:var(--coblack);  ;}
 html{
     --cored : red;
     --coblue :blue;
-    --coblack : rgb(76, 76, 82);
+    --coblack : rgb(211, 211, 218);
     --cowhite :rgb(233, 230, 230); 
-    --cosky :rgb(7, 127, 148); 
+    --cosky :rgb(20, 199, 199); 
     }
 
 /**********************************START HEADER********************************************/
